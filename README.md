@@ -3,6 +3,8 @@
 > **Author:** David Boyd<br>
 > **Date:** 2022-03-21
 
+![](./imgs/windows.gif)
+
 This program jiggles your mouse to prevent your computer from going to sleep or
 to screensaver mode.  I wrote this program because most of the mouse jiggler
 programs were written for only Windows.  This has been tested in both macOS
