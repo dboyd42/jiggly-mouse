@@ -1,8 +1,5 @@
 # Jiggly Mouse
 
----
----
-
 > **Author:** David Boyd<br>
 > **Date:** 2022-03-21
 
@@ -16,29 +13,35 @@ Linux as this program was purposefully written in Python3 to be cross-platform.
 
 ### Running the Binary
 
-When running with the provided *(will be pushed soon)* Windows:
-`jiggly-mouse.exe`, macOS: `jiggly-mouse.app`, or Linux: `jiggly-mouse.elf`:
+When running with the provided *(will be pushed soon)*<br>
+  - Windows: `jiggly-mouse.exe`
+  - macOS: `jiggly-mouse.app`
+  - Linux: `jiggly-mouse.elf`
 
-  1. Download the platform relative binary to desired directory
-  2. Open the program where and accept the prompts
+1. Download the platform relative binary to desired directory
+  
+2. Open the program where and accept the prompts
+    
     - macOS: `Security & Privacy` > `Accessibility Access (Events)` > Allow
-      - This is because the program is taking over your mouse
-      - *Note: The binary is slightly different as to stop the jiggling has no
-        y-axis range set.  --Will update shortly.*
+    - This is because the program is taking over your mouse
+    - *Note: The binary is slightly different as to stop the jiggling has no y-axis range set.  --Will update shortly.*
+    
     - Windows: **will update once I get PyInstaller to work again**
     - Linux: **will update once tested**
-  3. Program instructions will be provided in program as well:
-    - **START:** Click `Jiggle` to jiggle the mouse
-    - **STOP:** Jiggle the mouse past its jiggling range to stop the jiggling
+  
+  3. Program instructions will be provided in program as well<br>
+    - **START:** Click `Jiggle` to jiggle the mouse<br>
+    - **STOP:** Jiggle the mouse past its jiggling range to stop the jiggling<br>
     - **EXIT:** Click `Quit` to exit the program
 
-### Running via Python3
+### Running via Python3-CLI
 
 #### Dependencies
 
 - **PIP:** `PyAutoGui` for GUI mouse control
 - ***macOS:*** `Tkinter` has issues, so good luck.  I messed up my soft-linked
   files by installing it via brew... dunno what else it messed up.
+    - Running the `jiggly-mouse.app` binary resolves this issue
 
 #### Run via CLI
 
