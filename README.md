@@ -15,32 +15,39 @@ Linux as this program was purposefully written in Python3 to be cross-platform.
 
 ### Running the Binary
 
-When running with the provided *(will be pushed soon)* binaries:<br>
+Provided binaries:
+
   - :white_check_mark: Windows: `./binaries/jiggly-mouse-win-x64.exe`
   - :white_check_mark: macOS: `./binaries/jiggly-mouse-macOS.app`
   - :timer_clock: Linux: `./binaries/jiggly-mouse-linux.elf`
-  - :x: WSL2+Kali-Win-Kex: No luck :shrug:
+  - :x: WSL2 + Kali-Win-Kex (TigerVNC): No luck :shrug:
 
 1. Download the platform relative binary to desired directory
 
 2. Open the program where and accept the prompts
 
     - **macOS - Monterey**
+
 	1. Unzip application
 	2. Upon prompt: `Security & Privacy` > `Accessibility` > Allow `jiggly-mouse-macOS.app`
           - This is because the program is taking over your mouse
 
     - **Windows 11** 
+
       - Prompt: `Windows protected your PC` 
+
         1. Click `More info`
         2. Click `Run anyway`
 
-    - Linux: **will update once tested**
+    - **Linux** 
 
-  3. Program instructions will be provided in program as well<br>
-    - **START:** Click `Jiggle` to jiggle the mouse<br>
-    - **STOP:** Jiggle the mouse past its jiggling range to stop the jiggling<br>
-    - **EXIT:** Click `Quit` to exit the program
+      - *will update once tested*
+
+  3. Program instructions will be provided in program as well
+
+    - **START:** Click `Jiggle` to jiggle the mouse
+    - **STOP :** Jiggle the mouse past its jiggling range to stop the jiggling
+    - **EXIT :** Click `Quit` to exit the program
 
 ### Running via Python3-CLI
 
@@ -54,4 +61,5 @@ When running with the provided *(will be pushed soon)* binaries:<br>
 #### Run via CLI
 
   - `python3 jiggly-mouse.py` or use whatever setup you have at this point.
+  - Or allow permissions: `chmod u+x jiggly-mouse.py && ./jiggly-mouse.py`
 
