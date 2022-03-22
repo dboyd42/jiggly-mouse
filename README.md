@@ -23,8 +23,8 @@ When running with the provided *(will be pushed soon)*<br>
 2. Open the program where and accept the prompts
     
     - macOS: `Security & Privacy` > `Accessibility Access (Events)` > Allow
-    - This is because the program is taking over your mouse
-    - *Note: The binary is slightly different as to stop the jiggling has no y-axis range set.  --Will update shortly.*
+      - This is because the program is taking over your mouse
+      - *Note: The binary is slightly different as to stop the jiggling has no y-axis range set.  --Will update shortly.*
     
     - Windows: **will update once I get PyInstaller to work again**
     - Linux: **will update once tested**
