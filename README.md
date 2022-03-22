@@ -14,21 +14,25 @@ Linux as this program was purposefully written in Python3 to be cross-platform.
 ### Running the Binary
 
 When running with the provided *(will be pushed soon)* binaries:<br>
-  - Windows: `jiggly-mouse.exe`
-  - macOS: `jiggly-mouse.app`
-  - Linux: `jiggly-mouse.elf`
+  - :white_check_mark: Windows: `./binaries/jiggly-mouse.exe`
+  - :timer_clock: macOS: `./binaries/jiggly-mouse.app`
+  - :timer_clock: Linux: `./binaries/jiggly-mouse.elf`
+  - :x: WSL+Kali-Win-Kex: No luck :shrug:
 
 1. Download the platform relative binary to desired directory
-  
+
 2. Open the program where and accept the prompts
-    
+
     - macOS: `Security & Privacy` > `Accessibility Access (Events)` > Allow
       - This is because the program is taking over your mouse
       - *Note: The binary is slightly different as to stop the jiggling has no y-axis range set.  --Will update shortly.*
-    
-    - Windows: **will update once I get PyInstaller to work again**
+
+    - Windows > `Windows protected your PC` prompt:
+      1. Click `More info`
+      2. Click `Run anyway`
+
     - Linux: **will update once tested**
-  
+
   3. Program instructions will be provided in program as well<br>
     - **START:** Click `Jiggle` to jiggle the mouse<br>
     - **STOP:** Jiggle the mouse past its jiggling range to stop the jiggling<br>
