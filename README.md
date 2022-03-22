@@ -13,7 +13,7 @@ Linux as this program was purposefully written in Python3 to be cross-platform.
 
 ## Installation
 
-### Running the Binary
+### Running the Binary -- Overview
 
 Provided binaries:
 
@@ -22,34 +22,46 @@ Provided binaries:
   - :timer_clock: Linux: `./binaries/jiggly-mouse-linux.elf`
   - :x: WSL2 + Kali-Win-Kex (TigerVNC): No luck :shrug:
 
-1. Download the platform relative binary to desired directory
+1. Download the platform relative binary to desired directory (ie. Desktop)
 
 2. Open the program where and accept the prompts
 
-    - **macOS - Monterey**
+### macOS - Monterey
 
-      1. Unzip application
-      2. Upon prompt: `Security & Privacy` > `Accessibility` > Allow `jiggly-mouse-macOS.app`
-        - This is required because the program is taking over your mouse
+---
 
-    - **Windows 11** 
+Bypassing Apple's [Unidentified Developer](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac)
 
-      - Prompt: `Windows protected your PC` 
-        1. Click `More info`
-        2. Click `Run anyway`
+  1. Unzip application (if applicable)
+  2. In the Finder  on your Mac, locate the app you want to open.<br> 
+     Don’t use Launchpad to do this. Launchpad doesn’t allow you to access the shortcut menu.
+  4. Control-click the app icon, then choose Open from the shortcut menu.
+  5. Click Open.<br>
+  
+  The app is now saved as an exception to your security settings, and you can open it in the future by double-clicking it just as you can any registered app.
+      
+  6. Upon prompt: `Security & Privacy` > `Accessibility` > Allow `jiggly-mouse-macOS.app`<br>
+     - This is required because the program is taking over your mouse
 
-    - **Linux** 
-      - *(will update once tested)*
+### Windows 11
 
-  3. Program instructions will be provided in program as well
+---
 
-    - **START:** Click `Jiggle` to jiggle the mouse
-    - **STOP :** Jiggle the mouse past its jiggling range to stop the jiggling
-    - **EXIT :** Click `Quit` to exit the program
+  - Prompt: `Windows protected your PC` 
+    1. Click `More info`
+    2. Click `Run anyway`
 
-### Running via Python3-CLI
+### Linux
 
-#### Dependencies
+---
+
+  - *(will update once tested)*
+
+## Running via Python3-CLI
+
+### Dependencies
+
+---
 
 - **PIP:** `PyAutoGui` for GUI mouse control
 - ***macOS:*** `Tkinter` has issues, so good luck.  I messed up my soft-linked
@@ -57,6 +69,8 @@ Provided binaries:
     - Running the `jiggly-mouse-macOS.app` binary resolves this issue.
 
 #### Run via CLI
+
+---
 
   - `python3 jiggly-mouse.py` or use whatever setup you have at this point.
   - Or allow permissions: `chmod u+x jiggly-mouse.py && ./jiggly-mouse.py`
