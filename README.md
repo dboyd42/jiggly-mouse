@@ -16,22 +16,24 @@ Linux as this program was purposefully written in Python3 to be cross-platform.
 ### Running the Binary
 
 When running with the provided *(will be pushed soon)* binaries:<br>
-  - :white_check_mark: Windows: `./binaries/jiggly-mouse.exe`
-  - :timer_clock: macOS: `./binaries/jiggly-mouse.app`
-  - :timer_clock: Linux: `./binaries/jiggly-mouse.elf`
+  - :white_check_mark: Windows: `./binaries/jiggly-mouse-win-x64.exe`
+  - :white_check_mark: macOS: `./binaries/jiggly-mouse-macOS.app`
+  - :timer_clock: Linux: `./binaries/jiggly-mouse-linux.elf`
   - :x: WSL2+Kali-Win-Kex: No luck :shrug:
 
 1. Download the platform relative binary to desired directory
 
 2. Open the program where and accept the prompts
 
-    - macOS: `Security & Privacy` > `Accessibility Access (Events)` > Allow
-      - This is because the program is taking over your mouse
-      - *Note: The binary is slightly different as to stop the jiggling has no y-axis range set.  --Will update shortly.*
+    - **macOS - Monterey**
+	1. Unzip application
+	2. Upon prompt: `Security & Privacy` > `Accessibility` > Allow `jiggly-mouse-macOS.app`
+          - This is because the program is taking over your mouse
 
-    - Windows > `Windows protected your PC` prompt:
-      1. Click `More info`
-      2. Click `Run anyway`
+    - **Windows 11** 
+      - Prompt: `Windows protected your PC` 
+        1. Click `More info`
+        2. Click `Run anyway`
 
     - Linux: **will update once tested**
 
@@ -47,7 +49,7 @@ When running with the provided *(will be pushed soon)* binaries:<br>
 - **PIP:** `PyAutoGui` for GUI mouse control
 - ***macOS:*** `Tkinter` has issues, so good luck.  I messed up my soft-linked
   files by installing it via brew... dunno what else it messed up.
-    - Running the `jiggly-mouse.app` binary resolves this issue
+    - Running the `jiggly-mouse-macOS.app` binary resolves this issue.
 
 #### Run via CLI
 
