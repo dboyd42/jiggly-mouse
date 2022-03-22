@@ -13,7 +13,7 @@ Linux as this program was purposefully written in Python3 to be cross-platform.
 
 ### Running the Binary
 
-When running with the provided *(will be pushed soon)*<br>
+When running with the provided *(will be pushed soon)* binaries:<br>
   - Windows: `jiggly-mouse.exe`
   - macOS: `jiggly-mouse.app`
   - Linux: `jiggly-mouse.elf`
