@@ -4,10 +4,10 @@
 # Description:
 #     Jiggles the mouse to prevent device from sleeping.
 # Date: 2022-03-15
-# Revised:
+# Revised: 2022-03-22 (explicit importing of pyautogui fns)
 
 import tkinter as tk
-import pyautogui as mouse
+from pyautogui import position, moveRel
 
 ##################
 ### JigglyPuff ###
@@ -64,8 +64,8 @@ class JigglyPuff:
         '''The jiggle method is a callback fns for the for the Run button'''
 
         # Declare and init coordinates
-        x1, y1 = x2, y2 = mouse.position()  # Current mouse position
-        range = 100                         # Out-of-bounds range
+        x1, y1 = x2, y2 = position()  # Current mouse position
+        range = 100                   # Out-of-bounds range
         x1_min = x1-range
         x1_max = x1+range
         y1_min = y1-range
@@ -74,11 +74,11 @@ class JigglyPuff:
         # Jiggle the mouse from left to right
         #   Break when out of range
         while (x1_min < x2 < x1_max) and (y1_min < y2 < y1_max):
-            mouse.moveRel(10, 0)
-            mouse.moveRel(-10, 0)
+            moveRel(10, 0)
+            moveRel(-10, 0)
 
             # Get new position of mouse
-            x2, y2 = mouse.position()
+            x2, y2 = position()
 
 ##############
 ### Main() ###
