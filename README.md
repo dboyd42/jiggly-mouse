@@ -28,20 +28,18 @@ Provided binaries:
 
     - **macOS - Monterey**
 
-	1. Unzip application
-	2. Upon prompt: `Security & Privacy` > `Accessibility` > Allow `jiggly-mouse-macOS.app`
-          - This is because the program is taking over your mouse
+      1. Unzip application
+      2. Upon prompt: `Security & Privacy` > `Accessibility` > Allow `jiggly-mouse-macOS.app`
+        - This is required because the program is taking over your mouse
 
     - **Windows 11** 
 
       - Prompt: `Windows protected your PC` 
-
         1. Click `More info`
         2. Click `Run anyway`
 
     - **Linux** 
-
-      - *will update once tested*
+      - *(will update once tested)*
 
   3. Program instructions will be provided in program as well
 
