@@ -17,7 +17,7 @@ When running with the provided *(will be pushed soon)* binaries:<br>
   - :white_check_mark: Windows: `./binaries/jiggly-mouse.exe`
   - :timer_clock: macOS: `./binaries/jiggly-mouse.app`
   - :timer_clock: Linux: `./binaries/jiggly-mouse.elf`
-  - :x: WSL+Kali-Win-Kex: No luck :shrug:
+  - :x: WSL2+Kali-Win-Kex: No luck :shrug:
 
 1. Download the platform relative binary to desired directory
 
